@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+     <link rel="stylesheet" href="style.css"></link>
+     
+</head>
+<body>
+      
+          <header>
+             <h1>
+                  MEDMAN
+             </h1>
+             <p>
+                  gestion des produits
+             </p>
+             <span  onclick ="ToDark()">
+               <img  id="dark"src="Images/dark.png">
+             </span>
+           <!-- <button style="position:fixed ; top:2px; right: 0; margin-right: 100px; height: 30px;" onclick="sidenone()"><img style="width: 30px; height: 30px;;" src="togel.gif"></button> -->
+          </header>
+              
+          <!-- <div class="sideBare">
+              
+          </div> -->
+
+          <div class="container">
+                <div class="create">
+                    <div class="info">
+                       <input type="text" placeholder="Nom du produit"  id="name">
+                       <!-- <input type="text" placeholder="Categorie du produit" id="category"> -->
+                        <select id="category">
+                           <option value="" >category</option>
+                           <option value="Voiture">Voiture</option>
+                           <option value="Tran">Tran</option>
+                           <option value="Avion">Avion</option>
+                     </select>
+                    </div>
+                    <div class="total">
+                       <input type="text" placeholder="Prix d'achat" onkeyup="prixTotal()" id="price">
+                       <input type="text" placeholder="TVA" onkeyup="prixTotal()" id="frais">
+                       <input type="text" placeholder="Reduction" onkeyup="prixTotal()" id="reduction">
+                       <small></small>   
+                    </div> 
+                    <button id="submet">Ajouter</button>
+                    <hr>
+                </div>
+
+                <div class="read">
+                 
+                  <div class="wrapper">
+                     <!-- <img class="search-icon" src="Images/search.png" /> -->
+                     <input class="search" placeholder="Search" onkeyup="searchPro(value)" type="text" >
+
+                     <!-- <img class="clear-icon" src="" /> -->
+                     <div class="but">
+                     <button id="b1" onclick="search(this.id)">Nom</button>
+               
+                  <button id="b2" onclick="search(this.id)">Categorie</button></div>
+                   </div>
+                     
+                        
+                  
+                           <div id="delAll">
+
+                           </div>
+
+                       
+               
+
+
+         <table>
+            <thead>
+             <tr>
+                 <th class="id">#</th>
+                 <th>Produit</th>
+                 <th>Categorie</th>
+                 <th>Prix d'achat</th>
+                 <th>TVA</th>
+                 <th>Reduction</th>
+                 <th>prix de vente</th>
+                 <th>Modifier</th>
+                 <th>Supprime</th>
+             </tr>
+            </thead>
+             <tbody>
+             </tbody>
+         </table>
+  
+</body>
+<script src="index.js"></script>
+</html>
